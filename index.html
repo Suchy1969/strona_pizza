@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,12 +10,19 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <style>
         body, html {
             width: 100%;
             height: 100%;
             overflow-y: scroll;
             scroll-behavior: smooth;
+            background-image: url('bg_image_pizza_opacity.png');
         }
 
         .navbar-brand img {
@@ -39,6 +46,7 @@
             background-repeat: no-repeat;
             color: white;
         }
+
         .bg-image {
             position: relative;
             overflow: hidden;
@@ -46,7 +54,8 @@
             background-size: cover;
             background-position: 50%;
         }
-        .mask {           
+
+        .mask {
             position: absolute;
             top: 0;
             right: 0;
@@ -56,52 +65,64 @@
             height: 100%;
             overflow: hidden;
             background-attachment: fixed;
-            z-index:2;
+            z-index: 2;
         }
+
         .d-flex {
             display: flex !important;
         }
+
         .align-items-center {
             align-items: center !important;
         }
+
         .justify-content-center {
             justify-content: center !important;
         }
+
         .h-100 {
             height: 100% !important;
         }
+
         .text-white {
             --mdb-text-opacity: 1;
             color: rgba(var(--mdb-white-rgb),var(--mdb-text-opacity)) !important;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+
         .baner_text {
             letter-spacing: 0.23em;
         }
+
         .display-1 {
             font-size: 6rem;
             font-weight: 300;
             line-height: 1.2;
         }
+
         a {
             text-decoration: none;
             display: inline-block;
         }
-        .row{
-            margin-top:10px;    
+
+        .row {
+            margin-top: 10px;
         }
+
         .ss {
             background-image: url('arrow_white.png');
             background-size: 50px;
             background-repeat: no-repeat;
-            background-position:center;
+            background-position: center;
             width: 80px;
             height: 80px;
-            margin:10px;
+            margin: 10px;
         }
+
             .ss:hover {
                 background-color: rgba(255, 255, 255, 0.1);
             }
+
         .style-2 {
             background-color: transparent;
             border: solid 3px #e5e6e7;
@@ -109,30 +130,36 @@
             border-right-color: rgb(229, 230, 231);
             border-bottom-color: rgb(229, 230, 231);
             border-left-color: rgb(229, 230, 231);
-            border-radius:100px;
-            padding:10px;
+            border-radius: 100px;
+            padding: 10px;
             color: inherit;
         }
-        h2{
-            color:black
+
+        h2 {
+            color: black
         }
-        #menu_text{
+
+        #menu_text {
             border-bottom: 3px solid black;
-            margin-bottom:5px;
+            margin-bottom: 5px;
         }
+        
     </style>
     <title></title>
 </head>
-<body>
+<body >
+    <div class="bg-image">
+
+    <!--https://mdbootstrap.com/snippets/standard/mdbootstrap/2515521?view=side-->
     <header>
         <div id="intro" class="bg-image shadow-2-strong">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
                 <div class="container d-flex align-items-center justify-content-center text-center h-100">
                     <div class="text-white">
-                        <h1  class="mb-3 display-1 baner_text"  >
+                        <h1 class="mb-3 display-1 baner_text">
                             ZAMÓW ONLINE
                         </h1>
-                        <a href="#page_main" class="ss style-2" ></a>
+                        <a href="#page_main" class="ss style-2"></a>
                     </div>
                 </div>
             </div>
@@ -197,11 +224,11 @@
         </div>
         <div class="col-md-12 d-flex align-items-center justify-content-center text-center h-100" id="menu_text">
             <h2 class="mb-3 display-1 baner_text">
-                ZAMÓWIENIE 
+                ZAMÓWIENIE
             </h2>
         </div>
         <div class="row">
-            <div class="col-md-6 ">
+            <div class="col-md-6 bg_color">
                 <table class="table">
                     <tr>
                         <td>
@@ -290,9 +317,6 @@
 
 
 
-
-
-
         </div>
         <div class="row">
 
@@ -304,5 +328,6 @@
 
 
     </div>
+</div>
 </body>
 </html>
