@@ -20,11 +20,13 @@
         body, html {
             width: 100%;
             height: 100%;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
+           
             background-image: url('bg_image_pizza_opacity.png');
         }
-
+        body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
         .navbar-brand img {
             height: 100px;
             border: 3px grey solid;
@@ -143,7 +145,24 @@
             border-bottom: 3px solid black;
             margin-bottom: 5px;
         }
-        
+        .box {
+            
+            transition:  transform 2s;
+        }
+            .box:hover {
+                
+                transform: rotateY(360deg);
+            }
+
+            .bg_color_white{
+                background-color:white;
+            }
+            .border_radius{
+                border-radius:10px;
+
+            }
+
+
     </style>
     <title></title>
 </head>
@@ -155,7 +174,7 @@
         <div id="intro" class="bg-image shadow-2-strong">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
                 <div class="container d-flex align-items-center justify-content-center text-center h-100">
-                    <div class="text-white">
+                    <div class="text-white box">
                         <h1 class="mb-3 display-1 baner_text">
                             ZAMÓW ONLINE
                         </h1>
@@ -213,7 +232,7 @@
 
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 slide-left">
 
                 <img src="menu23.jpg" />
 
@@ -227,8 +246,8 @@
                 ZAMÓWIENIE
             </h2>
         </div>
-        <div class="row">
-            <div class="col-md-6 bg_color">
+        <div class="row bg_color_white">
+            <div class="col-md-6  ">
                 <table class="table">
                     <tr>
                         <td>
