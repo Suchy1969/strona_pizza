@@ -4,13 +4,15 @@
     <meta charset="utf-8" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
     <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
+    <link rel="icon" type="image/x-icon" href="https://cdn.website.dish.co/static/20220124142032/static/icons/favicons/diner.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
@@ -110,6 +112,7 @@
             letter-spacing: 0.23em;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+
         @media screen and (max-width: 992px) {
             .display-1 {
                 font-size: 35px;
@@ -117,6 +120,7 @@
                 line-height: 1.2;
             }
         }
+
         @media screen and (min-width: 993px) {
             .display-1 {
                 font-size: 45px;
@@ -124,11 +128,13 @@
                 line-height: 1.2;
             }
         }
+
         .display-2 {
             font-size: 6rem;
             font-weight: 300;
             line-height: 1.2;
         }
+
         a {
             text-decoration: none;
             display: inline-block;
@@ -246,16 +252,133 @@
             padding-top: 1.5rem !important;
             padding-bottom: 1.5rem !important;
         }
-       .w-100{
-           width:100%;
-       }
-        #page_main {
-         background:rgba(255,255,255, 0.8);
+
+        .w-100 {
+            width: 100%;
         }
 
+        #page_main, #page_order {
+            background: rgba(255,255,255, 0.8);
+        }
 
+        .mod-website-services {
+            background-image: url('bg-services-big.jpg');
+            background-size: cover;
+            text-align: center;
+        }
 
-       
+        .brand-color {
+            color: #ff5722 !important;
+        }
+
+        .brand-titleFont {
+            font-family: 'Patrick Hand' !important;
+        }
+
+        .brand-subtitleFont {
+            font-family: 'Open Sans' !important;
+            font-weight: bold !important;
+        }
+
+        .subtitle {
+            color: #fff;
+        }
+
+        .title {
+            display: block;
+        }
+
+        .divider-mark {
+            width: 80px;
+            height: 4px;
+            margin: 30px auto;
+        }
+
+        .services-list i {
+            border: 5px solid #cccccc;
+            border-radius: 50%;
+            background: #fff;
+            font-size: 72px;
+            line-height: 120px;
+            width: 120px;
+            height: 120px;
+            margin: 0 0 10px;
+        }
+
+        .icon {
+            display: inline-block;
+            line-height: 1;
+            font-weight: normal;
+            font-style: normal;
+            speak: none;
+            text-decoration: inherit;
+            text-transform: none;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon_delivery::before {
+            content: "\f1b9";
+        }
+
+        .icon_outsideService::before {
+            content: "\f2e6";
+        }
+
+        .icon_takeaway::before {
+            content: "\f290 ";
+        }
+
+        .icon_freeWifi::before {
+            content: "\f1eb";
+        }
+
+        .icon::before {
+            font-family: "Font Awesome 5 Pro";
+        }
+
+        .mod-website-services .services-list span {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #fff;
+        }
+
+        .mod-website-services .services-list li {
+            display: inline-block;
+            margin: 0 10px 20px;
+            width: 140px;
+            vertical-align: top;
+            font-family: 'Open Sans' !important;
+            font-weight: 600 !important;
+        }
+
+        .mod-website-services {
+            text-align: center;
+            padding: 20px;
+            background-size: auto;
+            background-size: cover;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          
+        }
+        .divider-mark {
+            width: 80px;
+            height: 4px;
+            margin: 30px auto;
+        }
+        .brand-bg {
+            background-color: #ff5722 !important;
+        }
+        .mod-website-services h2 {
+               
+            font-size: 45px;
+        }
+        .mod-website-services h3 {
+            font-size: 45px;
+        }
     </style>
     <title></title>
 </head>
@@ -263,7 +386,7 @@
 
     <div class="bg-image">
 
-      
+       
 
         <header>
             <div id="intro" class="bg-image shadow-2-strong">
@@ -335,7 +458,43 @@
 
 
             </div>
+
+        </div>
+
+
+        <section class="mod-website-services ">
+          
+                <a id="services" class="anchor"></a>
+                <h2>
+                    <span class="title brand-color brand-titleFont">Nasze</span>
+                    <span class="subtitle brand-subtitleFont">usługi</span>
+                </h2>
+                <div class="divider-mark brand-bg"></div>
+                <ul class="services-list brand-color">
+                    <li>
+                        <i class="icon icon_delivery"></i>
+                        <span>Dostawa</span>
+                    </li>
+                    <li>
+                        <i class="icon icon_outsideService"></i>
+                        <span>Ogródek</span>
+                    </li>
+                    <li>
+                        <i class="icon icon_takeaway"></i>
+                        <span>Na wynos</span>
+                    </li>
+                    <li>
+                        <i class="icon icon_freeWifi"></i>
+                        <span>Bezpłatne Wi-Fi</span>
+                    </li>
+                </ul>
            
+        </section>
+
+
+
+        <div class="container menu" id="page_order">
+
             <div class="row">
                 <div class="col-md-12 d-flex align-items-center justify-content-center text-center h-100" id="menu_text">
                     <h2 class="mb-3 display-1 baner_text" id="page_order">
@@ -349,7 +508,7 @@
                                 <h4>Imie osoby zamawiającej</h4>
                             </td>
                             <td>
-                                <input id="imie" class="form-control" placeholder="Podaj imię" required/>
+                                <input id="imie" class="form-control" placeholder="Podaj imię" required />
                             </td>
                         </tr>
                         <tr>
@@ -412,7 +571,7 @@
                             </td>
                             <td>
                                 <div class="form-outline">
-                                    <input type="number" id="typeNumber" class="form-control" placeholder="Wybierz ilość" required/>
+                                    <input type="number" id="typeNumber" class="form-control" placeholder="Wybierz ilość" required />
                                 </div>
                             </td>
                         </tr>
@@ -444,42 +603,42 @@
                 </div>
 
             </div>
-            
+
         </div>
 
 
-            <footer class="w-100 py-4 flex-shrink-0 font_style">
-                <div class=" container py-4">
-                    <div class="row gy-4 gx-5 ">
-                        <div class="col-lg-4 col-md-6">
-                            <h5 class="h1 text-white">INFORMACJE NA TEMAT PIZZY</h5>
-                            <p class="small text-muted">Pizza – potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. Jest to płaski placek z ciasta drożdżowego, z sosem pomidorowym, posypany tartym serem i ziołami, pieczony w bardzo mocno nagrzanym piecu. Pizzę podaje się na gorąco, lecz rozpowszechnione jest jedzenie jej również na zimno</p>
+        <footer class="w-100 py-4 flex-shrink-0 font_style">
+            <div class=" container py-4">
+                <div class="row gy-4 gx-5 ">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="h1 text-white">INFORMACJE NA TEMAT PIZZY</h5>
+                        <p class="small text-muted">Pizza – potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. Jest to płaski placek z ciasta drożdżowego, z sosem pomidorowym, posypany tartym serem i ziołami, pieczony w bardzo mocno nagrzanym piecu. Pizzę podaje się na gorąco, lecz rozpowszechnione jest jedzenie jej również na zimno</p>
 
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-                            <h5 class="text-white mb-3">Quick links</h5>
-                            <ul class="list-unstyled text-muted">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#page_main">Menu</a></li>
-                                <li><a href="#page_order">Order</a></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Quick links</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#page_main">Menu</a></li>
+                            <li><a href="#page_order">Order</a></li>
+                        </ul>
+                    </div>
 
-                        <div class="col-lg-4 col-md-6">
-                            <h5 class="text-white mb-3">Karta stałego klienta</h5>
-                            <p class="small text-muted">Aby skorzystać z promocji stałego klienta wpisz swoje imię.</p>
-                            <form action="#">
-                                <div class="input-group mb-3">
-                                    <input class="form-control" type="text" placeholder="Wpisz swoje imie" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                </div>
-                            </form>
-                        </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-3">Karta stałego klienta</h5>
+                        <p class="small text-muted">Aby skorzystać z promocji stałego klienta wpisz swoje imię.</p>
+                        <form action="#">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="Wpisz swoje imie" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
-        </div>
-    
+    </div>
+
 
 </body>
 </html>
