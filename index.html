@@ -260,7 +260,9 @@
         #page_main, #page_order {
             background: rgba(255,255,255, 0.8);
         }
-
+        /*
+            Usługi
+        */
         .mod-website-services {
             background-image: url('bg-services-big.jpg');
             background-size: cover;
@@ -362,22 +364,29 @@
             background-size: cover;
             margin-top: 10px;
             margin-bottom: 10px;
-          
         }
+
         .divider-mark {
             width: 80px;
             height: 4px;
             margin: 30px auto;
         }
+
         .brand-bg {
             background-color: #ff5722 !important;
         }
+
         .mod-website-services h2 {
-               
             font-size: 45px;
         }
+
         .mod-website-services h3 {
             font-size: 45px;
+        }
+
+        .mapa-size {
+            height: 200px;
+            width: 100%;
         }
     </style>
     <title></title>
@@ -386,8 +395,7 @@
 
     <div class="bg-image">
 
-       
-
+        
         <header>
             <div id="intro" class="bg-image shadow-2-strong">
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
@@ -463,34 +471,33 @@
 
 
         <section class="mod-website-services ">
-          
-                <a id="services" class="anchor"></a>
-                <h2>
-                    <span class="title brand-color brand-titleFont">Nasze</span>
-                    <span class="subtitle brand-subtitleFont">usługi</span>
-                </h2>
-                <div class="divider-mark brand-bg"></div>
-                <ul class="services-list brand-color">
-                    <li>
-                        <i class="icon icon_delivery"></i>
-                        <span>Dostawa</span>
-                    </li>
-                    <li>
-                        <i class="icon icon_outsideService"></i>
-                        <span>Ogródek</span>
-                    </li>
-                    <li>
-                        <i class="icon icon_takeaway"></i>
-                        <span>Na wynos</span>
-                    </li>
-                    <li>
-                        <i class="icon icon_freeWifi"></i>
-                        <span>Bezpłatne Wi-Fi</span>
-                    </li>
-                </ul>
-           
-        </section>
 
+            <a id="services" class="anchor"></a>
+            <h2>
+                <span class="title brand-color brand-titleFont">Nasze</span>
+                <span class="subtitle brand-subtitleFont">usługi</span>
+            </h2>
+            <div class="divider-mark brand-bg"></div>
+            <ul class="services-list brand-color">
+                <li>
+                    <i class="icon icon_delivery"></i>
+                    <span>Dostawa</span>
+                </li>
+                <li>
+                    <i class="icon icon_outsideService"></i>
+                    <span>Ogródek</span>
+                </li>
+                <li>
+                    <i class="icon icon_takeaway"></i>
+                    <span>Na wynos</span>
+                </li>
+                <li>
+                    <i class="icon icon_freeWifi"></i>
+                    <span>Bezpłatne Wi-Fi</span>
+                </li>
+            </ul>
+
+        </section>
 
 
         <div class="container menu" id="page_order">
@@ -605,12 +612,12 @@
             </div>
 
         </div>
-
+   
 
         <footer class="w-100 py-4 flex-shrink-0 font_style">
             <div class=" container py-4">
                 <div class="row gy-4 gx-5 ">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <h5 class="h1 text-white">INFORMACJE NA TEMAT PIZZY</h5>
                         <p class="small text-muted">Pizza – potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. Jest to płaski placek z ciasta drożdżowego, z sosem pomidorowym, posypany tartym serem i ziołami, pieczony w bardzo mocno nagrzanym piecu. Pizzę podaje się na gorąco, lecz rozpowszechnione jest jedzenie jej również na zimno</p>
 
@@ -624,7 +631,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-2 col-md-6">
                         <h5 class="text-white mb-3">Karta stałego klienta</h5>
                         <p class="small text-muted">Aby skorzystać z promocji stałego klienta wpisz swoje imię.</p>
                         <form action="#">
@@ -632,6 +639,10 @@
                                 <input class="form-control" type="text" placeholder="Wpisz swoje imie" aria-label="Recipient's username" aria-describedby="button-addon2">
                             </div>
                         </form>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-3">Znajdziesz nas tutaj</h5>
+                        <iframe class="mapa-size" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4117.944605741413!2d19.111977195165384!3d50.82574902509832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f5468dc2be1c9c0!2sMEGA%20PIZZA!5e0!3m2!1sen!2sus!4v1643661157224!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
